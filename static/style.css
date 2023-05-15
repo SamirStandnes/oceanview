@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@200;350&display=swap');
+
+
+body {
+  font-family: 'Anybody', cursive;
+}
+
+button {
+
+}
+
+#landingpage, .betaling {
+    /* Add some space between the landingpage element and its children */
+    margin:0px 0;
+    width: 50%;
+
+   /* Add some padding to the element */
+    padding: 20px;
+
+    /* Add a border */
+    /* Add some rounded corners */
+    border-radius: 5px;
+    opacity: 0.8;
+    text-align: left;
+
+  }
+
+  @media (max-width: 900px) {
+    #landingpage {
+      width: 100%;
+    }
+  }
+
+  #Om_oss, #tjenester {
+    margin-bottom: 20px;
+  }
+
+p {
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+#produkter {
+  margin-top: 15px;
+}
+
+  h6 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-weight: none;
+    color:navy;
+    opacity: 1.0;
+  }
+
+  h5 {
+    margin-top: 0px;
+    opacity: 1.0;
+  }
+
+
+  .superclass_nav {
+    margin-bottom: 0px;
+
+  }
+
+  #coaching {
+    color: green;
+  }
+
+
+  textarea {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }

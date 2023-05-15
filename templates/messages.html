@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Meldinger
+{% endblock %}
+
+{% block main %}
+
+
+
+
+<!--
+    <div id="messages_table">
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th class="text-start">Bruker</th>
+                    <th class="text-end"> Medinger</th>
+                    <th class="text-end"> Tidspunkt</th>
+                </tr>
+            </thead>
+        <tbody>
+            {% for message  in messages %}
+                    <tr>
+                        <td class="text-start">{{message['message_text']}}</td>
+                        <td class="text-end">{{message['message_text']}}</td>
+                        <td class="text-start">{{message['message_text']}}</td>
+                    </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <div id="write_message">
+            <form action="/meldinger" method="post">
+                 <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="message" name="message" placeholder="Melding" type="text" >
+
+                <textarea rows="4" autofocus cols="50" name="comment"  id="message" name="message" placeholder="Melding" form="usrform"></textarea>
+                <br>
+                <button style="margin-top:20px" class="btn btn-primary" type="submit">Send melding</button>
+            </form>
+
+
+        </div>
+
+    </div>
+-->
+
+        {% if message %}
+
+            {% for message in messages %}
+                <div class="message">
+                    <p class="sender">{{ message.sender }}</p>
+                    <p class="text">{{ message.text }}</p>
+                    <p class="timestamp">{{ message.timestamp }}</p>
+                </div>
+            {% endfor %}
+
+            {% else %}
+
+            <p style="font-size:30px"> Ingen meldinger </p>
+
+            {% endif %}
+
+            <form action="/meldinger" method="POST">
+                <textarea name="message"></textarea>
+                <br style="margin-bottom: 0px;">
+                <button class="btn btn-primary" type="submit">Send melding</button>
+
+            </form>
+
+
+{% endblock %}
