@@ -1,1 +1,1 @@
-web: gunicorn oceanview:app
+web: gunicorn projectshare:app
