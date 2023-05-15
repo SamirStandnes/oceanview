@@ -1,1 +1,4 @@
-web: gunicorn oceanview:app
+runtime: python37
+handlers:
+- url: /.*
+  script: app.py
