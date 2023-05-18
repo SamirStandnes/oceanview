@@ -9,6 +9,12 @@ button {
 
 }
 
+input::placeholder {
+
+  font-size: 10px;
+
+}
+
 #landingpage, .betaling {
     /* Add some space between the landingpage element and its children */
     margin:0px 0;
